@@ -10,5 +10,9 @@ eureka:
 okta:
   oauth2:
     issuer:  https://dev-83683824.okta.com/oauth2/default
-    audience: api://default
+    audience: api://defaulspring:
+    
+spring:    
+  zipkin:
+    baseUrl: http://zipkin-svc:9411
 
