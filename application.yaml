@@ -1,10 +1,16 @@
+  #EUREKAServer
 eureka:
-  instance:
-    prefer-ip-address: true
+ instance:
+   hostname: localhost
+   prefer-ip-address: true
   client:
-    fetch-registry: true
-    register-with-eureka: true
+    register-with-eureka: false
+    fetch-registry: false   
     service-url:
-      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8671/eureka}
+      .defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+okta:
+ oauth2:
+    issuer: https://dev-83683824.okta.com/oauth2/default
+    audience: api://defaultreka}
       
 
